@@ -1,0 +1,44 @@
+ul.food-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.food-list li {
+    flex: 0 0 calc(25% - 1rem);
+    /* 25% for 4 items in a row with 1rem margin */
+    margin: 0.5rem;
+}
+
+.food-container {
+    height: 20rem;
+    width: 100%;
+    /* Equal width for each item */
+    border: 1px solid red;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.food-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the container */
+}
+
+.description {
+    padding: 0.6rem;
+    /* Equal spacing for the description */
+    color: black;
+    background-color: white;
+    text-align: center;
+}
+
+li a:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
