@@ -2,8 +2,40 @@
     <li *ngFor="let food of foods">
         <a>
             <div class="food-container">
-                <img src="{{food}}" alt="Food Images">
-                <div class="description">Description here</div>
+                <img src="{{food.imageUrl}}" alt="Food Images">
+                <div class="content">
+                    <div class="name">
+                        {{food.name}}
+                    </div>
+
+                    <span class="favorite" [ngClass]="food.favorite ? 'pink-heart' : 'default-heart'">&hearts;</span>
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                    <div class="rating">
+                        <span class="fa fa-star" [ngClass]="calculateStarClass(food.star, 1)"></span>
+                        <span class="fa fa-star" [ngClass]="calculateStarClass(food.star, 2)"></span>
+                        <span class="fa fa-star" [ngClass]="calculateStarClass(food.star, 3)"></span>
+                        <span class="fa fa-star" [ngClass]="calculateStarClass(food.star, 4)"></span>
+                        <span class="fa fa-star" [ngClass]="calculateStarClass(food.star, 5)"></span>
+                    </div>
+
+                    <div class="product-item-footer">
+                        <div class="origins">
+                            <span *ngFor="let origin of food.origin">
+                                {{origin}}
+                            </span>
+                        </div>
+                        <div class="cook-time">
+                            <span> &#x23F0;
+                            </span>
+                            {{food.cookTime}}
+                        </div>
+                    </div>
+                    <div class="price">
+                        {{ food.price | currency: 'INR':'symbol':'1.0-0' }}
+                    </div>
+                </div>
             </div>
         </a>
     </li>

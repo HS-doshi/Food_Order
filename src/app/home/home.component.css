@@ -13,14 +13,15 @@ ul.food-list li {
 }
 
 .food-container {
-    height: 20rem;
+    height: 22rem;
     width: 100%;
     /* Equal width for each item */
-    border: 1px solid red;
+    border: 1px solid white;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    position: relative;
 }
 
 .food-container img {
@@ -30,15 +31,120 @@ ul.food-list li {
     /* Maintain aspect ratio and cover the container */
 }
 
-.description {
-    padding: 0.6rem;
+.content {
+    padding: 0.5rem 1rem;
     /* Equal spacing for the description */
-    color: black;
+    color: rgb(214, 24, 24);
     background-color: white;
-    text-align: center;
+    position: relative;
 }
+
+.favorite {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 1.2rem;
+}
+
+.rating {
+    display: flex;
+    font-size: 12px;
+    margin: 0.2rem 0;
+}
+
+.rating .fa-star {
+    color: black;
+    font-size: small;
+}
+
+.rating .fa-star.checked {
+    color: red;
+    /* Color for fully filled stars */
+}
+
+.rating .fa-star.half-checked {
+    background: linear-gradient(90deg, red 50%, black 50%);
+    background-size: 1em;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 
 li a:hover {
     opacity: 0.5;
     cursor: pointer;
+}
+
+/* Pink Heart */
+.pink-heart {
+    color: red;
+}
+
+/* Default Heart (e.g., gray) */
+.default-heart {
+    color: black;
+}
+
+.rating {
+    display: flex;
+    position: relative;
+    font-size: 24px;
+    /* Adjust the font size as needed */
+}
+
+.product-item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.origins {
+    flex: 9;
+
+}
+
+.origins span {
+    border-radius: 2rem;
+    background-color: white;
+    color: gray;
+    font-size: .8rem;
+    margin-right: 0.3rem;
+    display: inline-block;
+}
+
+.cook-time {
+    font-size: 0.8rem;
+    flex: 3;
+    text-align: right;
+}
+
+.price {
+    font-size: 0.8rem;
+    flex: 4;
+    color: gray;
+    margin-top: .2rem;
+}
+
+.full-stars {
+    color: gold;
+    /* Color of full stars */
+    display: flex;
+}
+
+.half-star {
+    color: gold;
+    /* Color of half star */
+    display: flex;
+}
+
+.empty-stars {
+    color: lightgray;
+    /* Color of empty stars */
+    display: flex;
+}
+
+.rating span {
+    margin-right: 2px;
+    /* Adjust the spacing between stars as needed */
 }
