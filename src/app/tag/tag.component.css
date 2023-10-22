@@ -6,10 +6,10 @@ div {
 }
 
 div a {
-    background-color: #c3c2c3;
+    background-color: rgb(126, 121, 121);
     padding: .3rem 1rem;
     margin: .2rem .15rem;
     border-radius: 10rem;
-    color: blue;
+    color: white;
     font-weight: 550;
 }
