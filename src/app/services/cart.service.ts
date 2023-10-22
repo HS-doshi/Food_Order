@@ -20,15 +20,15 @@ export class CartService {
   }
 
   removeFromCart(foodId: number): void {
-
     this.cart.item = this.cart.item.filter(item => item.food.id != foodId)
   }
-  changeQuantity(quantity: number, foodId: number) {
-    let cartitem = this.cart.item.find(item => item.food.id === foodId)
+  changeQuantity(foodId: number, newQuantity: number): void {
+    let cartItem = this.cart.item.find(item => item.food.id === foodId);
+    if (!cartItem) return;
 
-    if (!cartitem)
-      return;
-    cartitem.quantity = quantity;
+    cartItem.quantity = newQuantity;
+    // Update the price based on the new quantity
+    cartItem.price = cartItem.food.price * newQuantity;
   }
 
   getCart(): Cart {
