@@ -66,7 +66,7 @@ export class FoodService {
         cookTime: '5-7',
         favorite: true,
         origin: ['Indian', 'Gujarati'],
-        star: 4.6,
+        star: 5,
         imageUrl: '/assets/panipuri.jpg',
         tags: ['Panipuri', 'FastFood', 'Enjoy', 'Gujarati', 'Indian']
       },

@@ -16,7 +16,7 @@ ul.food-list li {
     height: 22rem;
     width: 100%;
     /* Equal width for each item */
-    border: 0.3px solid black;
+    border: 1px solid white;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
