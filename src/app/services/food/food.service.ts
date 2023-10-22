@@ -1,11 +1,39 @@
 import { Injectable } from '@angular/core';
 import { Foods } from 'src/app/shared/models/food';
+import { Tag } from 'src/app/shared/models/Tag';
+
 @Injectable({
   providedIn: 'root'
 })
 export class FoodService {
 
   constructor() { }
+
+  getFoodById(id: number): Foods {
+    return this.getAll().find(food => food.id == id)!;
+  }
+
+  getAllFoodByTag(tag: string): Foods[] {
+
+    return tag === "All" ?
+      this.getAll() : this.getAll().filter(food => food.tags?.includes(tag))
+
+    // we can write this statement is very simple type let's do it.
+  }
+
+  getAllTag(): Tag[] {
+    return [
+      { name: 'All', count: 8 },
+      { name: 'Lunch', count: 6 },
+      { name: 'FastFood', count: 3 },
+      { name: 'Dinner', count: 3 },
+      { name: 'Gujarati', count: 2 },
+      { name: 'Italian', count: 2 },
+      { name: 'Punjabi', count: 1 },
+      { name: 'Chinese', count: 1 },
+      { name: 'Rajasthani', count: 1 },
+    ];
+  }
 
   getAll(): Foods[] {
     return [
@@ -15,10 +43,10 @@ export class FoodService {
         price: 159,
         cookTime: '12-15',
         favorite: false,
-        origin: ['Indian', 'Italian'],
-        star: 5,
+        origin: ['Italian'],
+        star: 4.7,
         imageUrl: '/assets/pizza.jpg',
-        tags: ['Pizza', 'Fastfood', 'Lunch']
+        tags: ['Pizza', 'FastFood', 'Lunch', 'Dinner']
       },
       {
         id: 2,
@@ -26,10 +54,10 @@ export class FoodService {
         price: 79,
         cookTime: '10-12',
         favorite: true,
-        origin: ['Indian', 'Chinese'],
+        origin: ['Chinese'],
         star: 4.4,
         imageUrl: '/assets/chinese.jpg',
-        tags: ['Chinese', 'Fastfood', 'Lunch']
+        tags: ['Chinese', 'FastFood', 'Lunch',]
       },
       {
         id: 3,
@@ -40,7 +68,7 @@ export class FoodService {
         origin: ['Indian', 'Gujarati'],
         star: 4.6,
         imageUrl: '/assets/panipuri.jpg',
-        tags: ['Panipuri', 'Fastfood', 'Enjoy', 'Gujarati']
+        tags: ['Panipuri', 'FastFood', 'Enjoy', 'Gujarati', 'Indian']
       },
       {
         id: 4,
@@ -48,8 +76,8 @@ export class FoodService {
         price: 130,
         cookTime: '12-15',
         favorite: true,
-        origin: ['Indian', 'Punjab'],
-        star: 3,
+        origin: ['Indian', 'Punjabi'],
+        star: 4,
         imageUrl: '/assets/punjabi.jpg',
         tags: ['Punjabi', 'Lunch', 'Dinner']
       },
@@ -60,9 +88,9 @@ export class FoodService {
         cookTime: '15-20',
         favorite: true,
         origin: ['Indian', 'Gujarat'],
-        star: 4.3,
+        star: 4.6,
         imageUrl: '/assets/gujarati.jpg',
-        tags: ['Gujarati', 'Dinner', 'Lunch']
+        tags: ['Gujarati', 'Dinner', 'Lunch', 'Indian']
       },
       {
         id: 6,
@@ -70,7 +98,7 @@ export class FoodService {
         price: 90,
         cookTime: '10-12',
         favorite: true,
-        origin: ['Indian', 'Italian'],
+        origin: ['Italian'],
         star: 4.2,
         imageUrl: '/assets/idali.jpg',
         tags: ['Idli', 'Lunch', 'Italian']
@@ -81,10 +109,10 @@ export class FoodService {
         price: 90,
         cookTime: '10-12',
         favorite: true,
-        origin: ['Indian', 'Italian'],
-        star: 4.5,
+        origin: ['Italian'],
+        star: 3.7,
         imageUrl: '/assets/dhosa.jpg',
-        tags: ['Dhosa', 'Fastfood', 'Italian']
+        tags: ['Dhosa', 'Italian']
       },
       {
         id: 8,
@@ -93,9 +121,9 @@ export class FoodService {
         cookTime: '10-12',
         favorite: true,
         origin: ['Indian', 'Rajasthani'],
-        star: 4.5,
+        star: 3.8,
         imageUrl: '/assets/dalbati.jpg',
-        tags: ['Dalbati', 'Lunch']
+        tags: ['Dalbati', 'Lunch', 'Rajasthani', 'Indian']
       },
     ];
   }

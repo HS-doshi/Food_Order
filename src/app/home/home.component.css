@@ -16,7 +16,7 @@ ul.food-list li {
     height: 22rem;
     width: 100%;
     /* Equal width for each item */
-    border: 1px solid white;
+    border: 0.3px solid black;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -72,7 +72,7 @@ ul.food-list li {
 
 
 li a:hover {
-    opacity: 0.5;
+    opacity: 0.75;
     cursor: pointer;
 }
 
