@@ -46,7 +46,7 @@ export class FoodService {
         origin: ['Italian'],
         star: 4.7,
         imageUrl: '/assets/pizza.jpg',
-        tags: ['Pizza', 'FastFood', 'Lunch', 'Dinner']
+        tags: ['Pizza', 'FastFood', 'Dinner']
       },
       {
         id: 2,
@@ -57,7 +57,7 @@ export class FoodService {
         origin: ['Chinese'],
         star: 4.4,
         imageUrl: '/assets/chinese.jpg',
-        tags: ['Chinese', 'FastFood', 'Lunch',]
+        tags: ['Chinese', 'FastFood',]
       },
       {
         id: 3,
@@ -101,7 +101,7 @@ export class FoodService {
         origin: ['Italian'],
         star: 4.2,
         imageUrl: '/assets/idali.jpg',
-        tags: ['Idli', 'Lunch', 'Italian']
+        tags: ['Idli', 'Italian']
       },
       {
         id: 7,
