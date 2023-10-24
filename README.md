@@ -1,27 +1,56 @@
-# FoodOrder
+# Food Order
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
+This project is a demonstration of a user-centric, high-performance Food Order Website developed using Angular and TypeScript. It includes several key features to provide an outstanding food ordering experience.
 
-## Development server
+## Live Demo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+You can view the live demo of the website by following this link: [Food Order Website](https://testyifood-order.netlify.app/)
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Real-time Cart Management:** Enjoy instant feedback on your orders, with the ability to seamlessly add or remove items from your cart.
 
-## Build
+- **Dynamic Quantity Control:** Easily adjust the quantity of each item in your cart, offering flexibility in your orders.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Automatic Billing:** The system automatically calculates the total cost of your order as you add or remove items, simplifying the payment process.
 
-## Running unit tests
+- **Fast Search Capabilities:** Quickly find your desired food items with our efficient search capabilities, ensuring a seamless and reliable food ordering experience.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Getting Started
 
-## Running end-to-end tests
+Follow these steps to set up a development environment and run the project on your local machine:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Prerequisites
 
-## Further help
+Make sure you have Node.js and Angular CLI installed on your machine.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/HS-doshi/Food_Order
+
+# Navigate to the project directory
+cd food-order
+
+# Install the dependencies
+npm install
+
+# Start the development server
+ng serve
+
+```
+
+### Additional Commands
+Useful Angular CLI commands for development and testing:
+
+Generate a new component: ng generate component component-name
+Build the project: ng build
+Run unit tests: ng test
+Run end-to-end tests: ng e2e
+For more information, refer to the Angular CLI Overview and Command Reference.
+
+## Acknowledgments
+This project is brought to you by [Your Name]. We hope you enjoy exploring our Food Order Website and find it as exciting to use as we did building it.
+
+## Thank you for your interest and happy ordering!
