@@ -134,3 +134,29 @@ img {
     -webkit-background-clip: text;
     color: transparent;
 }
+
+/* Style the footer */
+.footer {
+    background-color: rgb(90, 87, 87);
+    color: white;
+    text-align: center;
+    padding: 2px;
+    font-size: small;
+    margin-bottom: 0;
+
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .footer {
+        font-size: small;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        font-size: small;
+        /* Further reduce font size for mobile devices */
+    }
+}

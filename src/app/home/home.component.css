@@ -4,31 +4,37 @@ ul.food-list {
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
 
 ul.food-list li {
     flex: 0 0 calc(25% - 1rem);
     /* 25% for 4 items in a row with 1rem margin */
-    margin: 0.5rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 12px;
+    justify-content: center;
 }
 
-.food-container {
-    height: 22rem;
-    width: 100%;
-    /* Equal width for each item */
-    border: 1px solid white;
-    border-radius: 1rem;
+.container {
     display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
-.food-container img {
-    height: 100%;
-    width: 100%;
+.container img {
+    width: 310px;
+    height: 280px;
     object-fit: cover;
-    /* Maintain aspect ratio and cover the container */
+    padding: -10px;
+    margin: 0;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
 }
 
 .content {
@@ -171,5 +177,6 @@ li a:hover {
     .footer {
         font-size: small;
         /* Further reduce font size for mobile devices */
+        flex-grow: 1;
     }
 }
