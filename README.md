@@ -59,4 +59,5 @@ For more information, refer to the Angular CLI Overview and Command Reference.
 ## Acknowledgments
 This project is brought to you by [Your Name]. We hope you enjoy exploring our Food Order Website and find it as exciting to use as we did building it.
 
-## Thank you for your interest and happy ordering! If you like kindly give 🌟
+## If you like this project, please feel free to give a 🌟
+## Thank you for your interest and happy ordering!
