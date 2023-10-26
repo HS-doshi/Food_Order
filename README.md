@@ -40,6 +40,12 @@ npm install
 ng serve
 
 ```
+![Screenshot 2023-10-23 125441](https://github.com/HS-doshi/Food_Order/assets/88900807/b1b35728-da62-42d8-b9e0-efa14402243f)
+
+![Screenshot 2023-10-26 221159](https://github.com/HS-doshi/Food_Order/assets/88900807/da016039-50fd-4a22-90a8-0a476283adc9)
+
+
+![Screenshot 2023-10-26 221425](https://github.com/HS-doshi/Food_Order/assets/88900807/3ef6929c-50bd-4820-be50-dc702a8ed930)
 
 ### Additional Commands
 Useful Angular CLI commands for development and testing:
@@ -53,4 +59,4 @@ For more information, refer to the Angular CLI Overview and Command Reference.
 ## Acknowledgments
 This project is brought to you by [Your Name]. We hope you enjoy exploring our Food Order Website and find it as exciting to use as we did building it.
 
-## Thank you for your interest and happy ordering!
+## Thank you for your interest and happy ordering! If you like kindly give 🌟
