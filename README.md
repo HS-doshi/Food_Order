@@ -4,7 +4,7 @@ This project is a demonstration of a user-centric, high-performance Food Order W
 
 ## Live Demo
 
-You can view the live demo of the website by following this link: [Food Order Website](https://testyifood-order.netlify.app/)
+You can view the live demo of the website by following this link: [Food Order Website](https://testyfood-order.netlify.app/)
 
 ## Features
 
